@@ -21,7 +21,7 @@ cloud_topic:
    - "/os1_cloud_node2/points"
 
 # window sizes
-window_size: 6
+window_size: 12
 opt_window_size: 2
 
 ############################## For normal use

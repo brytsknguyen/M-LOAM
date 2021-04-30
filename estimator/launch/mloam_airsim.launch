@@ -53,7 +53,7 @@
         args="0 0 0 -0.1131 -0.0433 -0.0049 0.9926 world_base world 10"/> 
     <node name="static_tf_world_sensor_into_base_sensor" pkg="tf" type="static_transform_publisher"
         args="0 0 0 0 0 0 1 world laser_0 10"/>
-    <node name="static_tf_laser_into_laser_left" pkg="tf" type="static_transform_publisher" 
+    <node name="static_tf_laser_into_laser_left" pkg="tf" type="static_transform_publisher"
         args="0 0 0 0 0 0 1 laser_0 velo_left 10"/>        
     <node name="static_tf_laser_into_laser_right" pkg="tf" type="static_transform_publisher"
         args="0 0 0 0 0 0 1 laser_1 velo_right 10"/>     
@@ -70,10 +70,10 @@
 
     <!-- ######### Visualization ######################################### -->
     <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log"
-          args="-d $(find mloam)/rviz/rviz_config_airsim.rviz" />
+          args="-d $(find mloam)/rviz/rviz_config_bca.rviz" />
 
     <arg name="bag_file_use" default="true" />
-    <arg name="bag_file"     default="/media/$(env USER)/mySamsungSSD/AirSim/interwoven/interwoven.bag" />
+    <arg name="bag_file"     default="/home/nuc/DATASETS/AirSim/nbh_01/nbh_01.bag" />
     <arg name="autorun"      default="false" />
 
     <param name="use_sim_time" value="true" />

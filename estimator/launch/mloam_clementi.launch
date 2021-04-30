@@ -73,7 +73,7 @@
           args="-d $(find mloam)/rviz/rviz_config_bca.rviz" />
 
     <arg name="bag_file_use" default="true" />
-    <arg name="bag_file"     default="/media/tmn/mySamsungSSD/bca_clementi_20200116/blk321_full/blk321_full.bag" />
+    <arg name="bag_file"     default="/home/nuc/DATASETS/clementi/blk321_full/blk321_full.bag" />
     <arg name="autorun"      default="false" />
 
     <param name="use_sim_time" value="true" />

@@ -37,7 +37,7 @@ mkdir -p $EXP_OUTPUT_DIR/ ;
 # cp -R $ROS_PKG_DIR/config $EXP_OUTPUT_DIR;
 # cp -R $ROS_PKG_DIR/launch $EXP_OUTPUT_DIR;
 
-roslaunch mloam mloam_ntuviral.launch \
+roslaunch mloam mloam_airsim.launch \
 autorun:=true \
 bag_file:=$DATASET_LOCATION/$EXP_NAME/$EXP_NAME.bag \
 & \

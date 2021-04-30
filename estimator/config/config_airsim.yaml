@@ -19,9 +19,10 @@ num_of_laser: 2
 cloud_topic:
    - "/airsim_node/drone_0/lidar/Lidar0"
    - "/airsim_node/drone_0/lidar/Lidar1"
+   - "/airsim_node/drone_0/lidar/Lidar2"
 
 # window sizes
-window_size: 4
+window_size: 12
 opt_window_size: 2
 
 ############################## For normal use
@@ -35,18 +36,12 @@ body_T_laser: !!opencv-matrix
    rows: 2
    cols: 7
    dt: d
-#    data: [0, 0, 0, 1, 0, 0, 0,
-#           0, 0, 0, 1, 0, 0, 0] # w/o initialization
-#    data: [0, 0, 0, 1, 0, 0, 0,
-#           0.3113, -0.0103, -0.03334, 0.94956, 0.1130, -0.47195, -0.10341] # initialization (old)
-#    data: [0, 0, 0, 1, 0, 0, 0,
-#           0.31744, -0.00431, 0.01186, 0.9468, 0.0308, -0.56911, -0.12243] # initialization (new)
-   # data: [0, 0, 0, 1, 0, 0, 0,
-   #        0.32182, -0.00094, 0.00744, 0.94677, 0.06641, -0.49424, -0.11251] # refinement
    data: [ 0.00,  0.00,  0.00,  1.00,
            0.00,  0.00,  0.00,
            0.00,  0.707106781186547,  0.707106781186547,  0.0,
-          -0.75,  0.00,  0.0] # PS-Calib
+          -0.75,  0.00,  0.0,
+           0.50,  0.50,  0.50,  0.50,
+          -0.375, 0.00,  0.0] # PS-Calib
 
 ############################## For Journal experiments
 # 1
