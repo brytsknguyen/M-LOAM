@@ -70,7 +70,7 @@
 
     <!-- ######### Visualization ######################################### -->
     <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log"
-          args="-d $(find mloam)/rviz/rviz_config_bca.rviz" />
+          args="-d $(find mloam)/rviz/rviz_config_airsim.rviz" />
 
     <arg name="bag_file_use" default="true" />
     <arg name="bag_file"     default="/home/nuc/DATASETS/AirSim/nbh_01/nbh_01.bag" />

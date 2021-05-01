@@ -14,7 +14,7 @@ segment_theta: 0.53 # Lego-loam: 1.0
 # laser parameters
 idx_ref: 0
 n_scans: 16
-num_of_laser: 2
+num_of_laser: 3
 
 cloud_topic:
    - "/airsim_node/drone_0/lidar/Lidar0"
@@ -33,7 +33,7 @@ estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trus
 
 # qx qy qz qw px py pz
 body_T_laser: !!opencv-matrix
-   rows: 2
+   rows: 3
    cols: 7
    dt: d
    data: [ 0.00,  0.00,  0.00,  1.00,
