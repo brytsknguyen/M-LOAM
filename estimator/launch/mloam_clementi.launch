@@ -25,7 +25,7 @@
             <node pkg="mloam" type="mloam_node_rhd" name="mloam_node_rhd" 
                 args="-config_file=$(arg config_file)
                     -result_save=$(arg result_save)
-                    -output_path=$(arg output_path)" >
+                    -output_path=$(arg output_path)" output="screen" >
             </node>
         </group>
         <group if="$(arg run_mloam_mapping)">
@@ -70,7 +70,7 @@
 
     <!-- ######### Visualization ######################################### -->
     <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log"
-          args="-d $(find mloam)/rviz/rviz_config_bca.rviz" />
+          args="-d $(find mloam)/rviz/rviz_config_clementi.rviz" />
 
     <arg name="bag_file_use" default="true" />
     <arg name="bag_file"     default="/home/nuc/DATASETS/clementi/blk321_full/blk321_full.bag" />
