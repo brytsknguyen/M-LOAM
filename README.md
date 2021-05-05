@@ -1,3 +1,21 @@
+# Hello
+
+This is forked repository of [M-LOAM](https://github.com/gogojjh/M-LOAM).
+
+In we add extra script and configuration files to quickly test it on [NTU VIRAL dataset](https://ntu-aris.github.io/ntu_viral_dataset/).
+
+## Instructions
+
+1. After you have cloned and compiled the package, please cd to the launch folder by running `roscd mloam/launch`.
+
+2. Modify the script `runall_ntuviralsh` to declare the output directory via the variable `EPOC_DIR` and the path to the dataset via the `DATASET_LOCATION` variable. Note that the bag files should be orgnanized 
+
+3. Run `bash runall_ntuviral.sh` to autonmatically launch the ago with the bag files one by one.
+
+4. The log files will be created in .csv format and you can use matlab or python to calculate the localization error against the ground truth on these logs. An example of the analysis can be found in the `M-LOAM/analysis` folder. Just run the MATLAB script `checkall_parallel.m` and the results will be printed out.
+
+If you use the NTU VIRAL dataset in your work, please cite our work using the BibTex code at the dataset's [website](https://ntu-aris.github.io/ntu_viral_dataset/). Please also cite M-LOAM's publication below.
+
 # M-LOAM
 ## Robust Odometry and Mapping for Multi-LiDAR Systems with Online Extrinsic Calibration
 M-LOAM is a robust system for multi-LiDAR extrinsic calibration, real-time odometry, and mapping. Without manual intervention, our system can start with several extrinsic-uncalibrated LiDARs, automatically calibrate their extrinsics, and provide accurate poses as well as a globally consistent map.

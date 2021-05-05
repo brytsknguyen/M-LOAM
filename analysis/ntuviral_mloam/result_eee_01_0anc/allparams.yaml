@@ -1,0 +1,11 @@
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris:
+    host_192_168_1_4__39363: http://192.168.1.4:39363/
+rosversion: '1.14.10
+
+  '
+run_id: 52b41492-ad8a-11eb-992c-287fcf739439
+use_sim_time: true
