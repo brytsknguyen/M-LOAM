@@ -10,7 +10,7 @@ PACKAGE_DIR=$(pwd)
 # Return to the current dir, print the directions
 cd $CURR_DIR
 echo CURRENT DIR: $CURR_DIR
-echo VIRAL DIR:   $PACKAGE_DIR
+echo PKG DIR:   $PACKAGE_DIR
 
 export EPOC_DIR=/home/$USER/nucssd2/MATLAB_WS/RAL_VIRAL_SLAM/clementi_mloam
 # export DATASET_LOCATION=/home/$USER/DATASETS/clementi/
