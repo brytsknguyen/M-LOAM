@@ -13,7 +13,9 @@ echo CURRENT DIR: $CURR_DIR
 echo VIRAL DIR:   $PACKAGE_DIR
 
 export EPOC_DIR=/home/$USER/nucssd2/MATLAB_WS/RAL_VIRAL_SLAM/airsim_mloam
-export DATASET_LOCATION=/home/$USER/DATASETS/AirSim/
+# export DATASET_LOCATION=/home/$USER/DATASETS/AirSim/
+export DATASET_LOCATION=/media/$USER/myHPSSD/AirSim
+
 
 export CAPTURE_SCREEN=false;
 export LOG_DATA=true;
