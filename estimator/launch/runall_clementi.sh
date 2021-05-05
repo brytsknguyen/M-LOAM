@@ -1,5 +1,5 @@
-# catkin_make -C /home/$USER/dev_ws ;
-# source /home/$USER/dev_ws/devel/setup.bash
+# Build the workspace
+catkin build;
 
 
 # Get the current directory
