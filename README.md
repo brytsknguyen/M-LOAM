@@ -8,7 +8,12 @@ In this we add extra script and configuration files to quickly run the experimen
 
 1. After you have cloned and compiled the package, please cd to the launch folder by running `roscd mloam/launch`.
 
-2. Modify the script `runall_ntuviral.sh` to declare the output directory via the variable `EPOC_DIR`, and the path to the dataset via the `DATASET_LOCATION` variable. Note that the bag files should be orgnanized 
+2. Modify the script `runall_ntuviral.sh` to declare the output directory via the variable `EPOC_DIR`, and the path to the dataset via the `DATASET_LOCATION` variable. Note that the bag files should be orgnanized like in the figure below:
+
+<p align="center">
+  <img height="300" src="docs/picture/structure.png">
+</p>
+
 
 3. Run `bash runall_ntuviral.sh` to autonmatically launch the ago with the bag files one by one.
 
