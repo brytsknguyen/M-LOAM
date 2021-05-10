@@ -15,7 +15,7 @@ In this we add extra script and configuration files to quickly run the experimen
 </p>
 
 
-3. Run `bash runall_ntuviral.sh` to autonmatically launch the ago with the bag files one by one.
+3. Run `bash runall_ntuviral.sh` to automatically launch the algo with the bag files one by one.
 
 4. The log files will be created in .csv format and you can use matlab or python to calculate the localization error against the ground truth on these logs. An example of the analysis can be found in the `M-LOAM/analysis` folder. Just run the MATLAB script `checkall_parallel.m` and the results will be printed out.
 
