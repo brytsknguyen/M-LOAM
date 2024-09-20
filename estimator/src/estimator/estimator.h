@@ -33,9 +33,29 @@
 #include <eigen3/Eigen/Dense>
 #include <eigen3/Eigen/Geometry>
 
-#include <pcl/common/transforms.h>
-#include <pcl/search/impl/flann_search.hpp>
-#include <pcl/filters/extract_indices.h>
+// #include <pcl/common/transforms.h>
+// #include <pcl/kdtree/kdtree_flann.h>
+// #include <pcl/kdtree/impl/kdtree_flann.hpp>
+// #include <pcl/filters/extract_indices.h>
+
+/* All needed for kdtree of custom point type----------*/
+#include <pcl/search/impl/kdtree.hpp>
+#include <pcl/kdtree/kdtree_flann.h>
+#include <pcl/kdtree/impl/kdtree_flann.hpp>
+/* All needed for kdtree of custom point type----------*/
+
+/* All needed for filter of custom point type----------*/
+#include <pcl/pcl_base.h>
+#include <pcl/impl/pcl_base.hpp>
+#include <pcl/filters/filter.h>
+#include <pcl/filters/impl/filter.hpp>
+#include <pcl/filters/uniform_sampling.h>
+#include <pcl/filters/impl/uniform_sampling.hpp>
+#include <pcl/filters/impl/voxel_grid.hpp>
+#include <pcl/filters/crop_box.h>
+#include <pcl/filters/impl/crop_box.hpp>
+/* All needed for filter of custom point type----------*/
+
 
 #include "common/common.hpp"
 #include "common/color.hpp"
