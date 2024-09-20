@@ -75,13 +75,6 @@ ROS Kinetic or Melodic. [ROS Installation](http://wiki.ros.org/ROS/Installation)
 
 1.4. **PCL-1.8**
 
-<!-- 1.4 **Libpointmarcher**
-```
- ./setup/install_libnabo.sh
- ./setup/install_libpointmatcher.sh
-``` -->
-
-<!-- ----------------------------------------------------------- -->
 ### 2. Build M-LOAM on ROS
 ```
   mkdir -p ~/catkin_ws/src
@@ -93,7 +86,7 @@ ROS Kinetic or Melodic. [ROS Installation](http://wiki.ros.org/ROS/Installation)
 
 <!-- ----------------------------------------------------------- -->
 ### 3. Example
-* [Datasets](http://gofile.me/4jm56/2iYvOr73R) collected with different platforms:
+* [Datasets](http://gofile.me/4jm56/zU2yvg3bH) collected with different platforms:
   1. Simulation Robot (SR)
   2. Real Handheld Device (RHD)
   3. Real Vechile (RV)
@@ -112,50 +105,16 @@ ROS Kinetic or Melodic. [ROS Installation](http://wiki.ros.org/ROS/Installation)
   * ``python2 run_mloam.py -program=single_test -sequence=RHD -start_idx=1 -end_idx=1`` 
     * You will broadcast the RV01.bag to test the M-LOAM system.
 
-<!-- ### 5. Results -->
-<!-- **red**: odometry; **green**: mapping; **blue**: gt -->
-<!-- <a href="https://www.youtube.com/embed/WDpH80nfZes" target="_blank"><img src="http://img.youtube.com/vi/WDpH80nfZes/0.jpg" alt="cla" width="240" height="180" border="10" /></a> -->
-
-<!-- * Test with SR <br>
-![](./picture/sr_trajectory.png)
-
-* Test in HKUST with RHD <br>
-![](./picture/rhd03garden.png)
-![](./picture/rhd04building.png)
-
-* Test with RV <br>
-![](./picture/rv01.png)
-
-* Test with Oxford RoboCar <br>
-![](./picture/oxford_traj.png) -->
-
-<!-- ### 6. Additional Features (have not fixed)
-* Future research
-  1. [on-going] Add a loop closure
-  2. [] Object-centric SLAM
-  3. [] Use more representative features
-  4. [] Integrated with high-frequency sensors
-  5. [] cross-domain, cross-modal dataset (simulator) for autonomous driving -->
-
 <!-- ----------------------------------------------------------- -->
 ### 4. System pipeline
-This could help you to understand the pipeline of M-LOAM. Note that **mloam_loop** is in development.
-![](picture/mloam_pipeline.png)
+This could help you to understand the pipeline of M-LOAM (loop closure part is not finished). 
+<img src="docs/picture/mloam_pipeline.png" style="zoom:67%;" />
+
+And you can also refer to [M-LOAM's pipeline](docs/mloam-pipeline-chinese.pdf) for a more detailed diagram and code review.
 
 <!-- ----------------------------------------------------------- -->
-<!-- ### 5. Issues
-I have modified the code with several times and tried different new features during the journal review process. The code style is not very perfect. Also in some sequeneces, M-LOAM may not achieve the best performence. Hope you can understand and I will try to fix them. -->
-
-<!-- ----------------------------------------------------------- -->
-### 5. TODO
-1. Parameter tunning, and a more detailed tutorial .
-2. **loop closure**.
-3. **Docker** support. The initial Docker file is in the folder: ```docker/Dockerfile```
-4. etc.
-
-<!-- ----------------------------------------------------------- -->
-### 6. Acknowledgements
-Thanks for these great works from which we learned to write M-LOAM
+### 5. Acknowledgements
+Thanks for these great works from which we learned to develop M-LOAM
 
 * LOAM (J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time) and its advanced version: [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM);
 * [LEGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
@@ -163,11 +122,10 @@ Thanks for these great works from which we learned to write M-LOAM
 * [VINS-MONO](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)
 * [Lidar Perception Library](https://github.com/LidarPerception/common_lib)
 
+Thanks for Ming Cao for providing a clear diagram and code review of M-LOAM
+
 <!-- ----------------------------------------------------------- -->
-### 7. Licence
+### 6. Licence
 The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
 
-We are still working on improving the code reliability. For any technical issues, please contact Jianhao Jiao <jjiao@ust.hk>.
-
-For commercial inquiries, please contact Prof.Ming Liu <eelium@ust.hk>.
-
+For any technical issues, please contact Dr. Jianhao Jiao <jiaojh1994@gmail.com>. For commercial inquiries, please contact Prof.Ming Liu <eelium@ust.hk>.
